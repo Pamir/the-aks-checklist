@@ -5,6 +5,8 @@
 The deployed version can be found here: [www.the-aks-checklist.com](https://www.the-aks-checklist.com)
 ![AKS Checklist](https://raw.githubusercontent.com/lgmorand/aks-checklist/master/src/img/social/facebook-banner.jpg)
 
+[![Build Status](https://dev.azure.com/perdem/POC/_apis/build/status/Pamir.the-aks-checklist?branchName=staging)](https://dev.azure.com/perdem/POC/_build/latest?definitionId=8&branchName=staging)
+
 The AKS Checklist is a (tentatively) exhaustive list of all elements you need to think of when preparing a cluster for production. It is based on all common best practices agreed around Kubernetes or documented [here](https://docs.microsoft.com/azure/aks/best-practices).
 
 Another good reading in another format is the [AKS baseline reference architecture](https://github.com/mspnp/aks-secure-baseline)
