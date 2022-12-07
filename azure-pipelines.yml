@@ -41,4 +41,7 @@ stages:
       inputs:
         azureSubscription: 'mysubscription'
         appName: 'akshci-bestpractices'
+        deployToSlotOrASE: true
+        resourceGroupName: 'akshci-bp-rg'
+        slotName: 'production'
         containers: '$(containerRegistry)/$(imageRepository):$(tag)'
