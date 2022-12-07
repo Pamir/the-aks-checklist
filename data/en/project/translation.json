@@ -4,7 +4,7 @@
   "URL_WEBSITE": "https://aka.ms/aks-hybrid-checklist",
   "SITE_TAGLINE": "The AKS Hybrid Checklist - the best way to ensure your cluster is production-ready!",
   "SITE_DESCRIPTION": "The AKS Hybrid Checklist is a (tentatively) exhaustive list of all elements you need to think of when preparing a cluster for production. It's based on all common best practices agreed around Kubernetes. It is the best way to ensure your cluster is production-ready!",
-  "SITE_VERSION":"Last updated on: ",
+  "SITE_VERSION":"Last updated on: 12/7/2022",
   "SITE_LANGUAGE": "en",
   "SITE_DIRECTION": "ltr",
   "URL_GITHUB_ROOT": "http://github.com/pamir/aks-checklist",
