@@ -38,7 +38,7 @@
     "description": "One of the most common custom policies that you might want to consider is to restrict the images that can be deployed in your cluster. But it can also be addressed with a proper egress lockdown or using an admission controller",
     "documentation": [
       {
-        "title": "Use the Azure Policy : Ensure only allowed container images in AKS",
+        "title": "Use the Azure Policy : Ensure only allowed container images in AKS Hybrid",
         "url": "https://docs.microsoft.com/azure/governance/policy/concepts/rego-for-aks#built-in-policies"
       },
       {
