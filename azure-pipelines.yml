@@ -48,3 +48,4 @@ stages:
         resourceGroupName: 'akshci-bp-rg'
         slotName: 'production'
         containers: '$(containerRegistry)/$(imageRepository):$(tag)'
+        
