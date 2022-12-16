@@ -1,11 +1,9 @@
 # The Azure Kubernetes Service Checklist
 
-![Build and deploy on prod](https://github.com/lgmorand/aks-checklist/workflows/Build%20and%20deploy%20on%20prod/badge.svg) ![Last commit](https://img.shields.io/github/last-commit/lgmorand/aks-checklist.svg) ![License](https://img.shields.io/github/license/lgmorand/aks-checklist.svg)
+[![Build Status](https://dev.azure.com/perdem/POC/_apis/build/status/Pamir.the-aks-checklist?branchName=staging)](https://dev.azure.com/perdem/POC/_build/latest?definitionId=8&branchName=staging) ![Last commit](https://img.shields.io/github/last-commit/pamir/the-aks-checklist.svg) ![License](https://img.shields.io/github/license/pamir/the-aks-checklist.svg)
 
-The deployed version can be found here: [www.the-aks-checklist.com](https://www.the-aks-checklist.com)
-![AKS Checklist](https://raw.githubusercontent.com/lgmorand/aks-checklist/master/src/img/social/facebook-banner.jpg)
-
-[![Build Status](https://dev.azure.com/perdem/POC/_apis/build/status/Pamir.the-aks-checklist?branchName=staging)](https://dev.azure.com/perdem/POC/_build/latest?definitionId=8&branchName=staging)
+The deployed version can be found here: [https://aka.ms/aks-hybrid-checklist](https://aka.ms/aks-hybrid-checklist)
+![AKS-HCI Checklist](https://raw.githubusercontent.com/pamir/the-aks-checklist/master/src/img/social/facebook-banner.jpg)
 
 The AKS Checklist is a (tentatively) exhaustive list of all elements you need to think of when preparing a cluster for production. It is based on all common best practices agreed around Kubernetes or documented [here](https://docs.microsoft.com/azure/aks/best-practices).
 
@@ -17,11 +15,7 @@ Another good reading in another format is the [AKS baseline reference architectu
 
 ## Contributors
 
-**[Fernando Mejía](https://github.com/feranto)**
-
-**[Michael Withrow](https://github.com/miwithro)**
-
-**[Tommy Falgout](https://github.com/lastcoolnameleft)**
+**[Pamir Erdem](https://github.com/pamir)**
 
 ## How to contribute
 
