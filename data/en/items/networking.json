@@ -186,7 +186,7 @@
     ]
   },
   {
-    "title": "Enable traffic management",
+    "title": "--REMOVE--Enable traffic management",
     "priority": "Medium",
     "description": "Azure Traffic Manager can direct customers to their closest AKS cluster and application instance. For the best performance and redundancy, direct all application traffic through Traffic Manager before it goes to your AKS cluster.",
     "detail": "If you have multiple AKS clusters in different regions, use Traffic Manager to control how traffic flows to the applications that run in each cluster. Azure Traffic Manager is a DNS-based traffic load balancer that can distribute network traffic across regions. Use Traffic Manager to route users based on cluster response time or based on geography. It can be used to improve app availability with automatic failover",
@@ -204,7 +204,7 @@
     ]
   },
   {
-    "title": "If using Azure CNI, check the maximum pods/node (default 30)",
+    "title": "--REMOVE--If using Azure CNI, check the maximum pods/node (default 30)",
     "priority": "High",
     "description": "With Azure Container Networking Interface (CNI), every pod gets an IP address from the subnet and can be accessed directly.",
     "detail": "These IP addresses must be unique across your network space, and must be planned in advance. Each node has a configuration parameter for the maximum number of pods that it supports. ",
@@ -221,7 +221,7 @@
     ]
   },
   {
-    "title": "If using a public API endpoint, restrict the IP addresses that can access it",
+    "title": "--REMOVE--If using a public API endpoint, restrict the IP addresses that can access it",
     "priority": "Medium",
     "description": "To improve the security of your clusters and minimize the risk of attacks, we recommend limiting the IP address ranges that can access the API server.",
 
@@ -238,7 +238,7 @@
     ]
   },
   {
-    "title": "Use Azue NAT Gateway as outboundType for scaling egress traffic",
+    "title": "--REMOVE--Use Azue NAT Gateway as outboundType for scaling egress traffic",
     "priority": "Medium",
     "description": "Whilst AKS customers are able to route egress traffic through an Azure Load Balancer, there are limitations on the amount of outbound flows of traffic that is possible.",
 
@@ -255,7 +255,7 @@
     ]
   },
   {
-    "title": "Use Dynamic allocations of IPs in order to avoid Azure CNI IP exhaustion",
+    "title": "--REMOVE--RETHINK--Use Dynamic allocations of IPs in order to avoid Azure CNI IP exhaustion",
     "priority": "Medium",
     "description": "A drawback with the traditional CNI is the exhaustion of pod IP addresses as the AKS cluster grows, resulting in the need to rebuild the entire cluster in a bigger subnet.",
     "detail":"The new dynamic IP allocation capability in Azure CNI solves this problem by allocating pod IPs from a subnet separate from the subnet hosting the AKS cluster.",
@@ -272,7 +272,7 @@
     ]
   },
   {
-    "title": "If using AGIC, do not share an AppGW across clusters",
+    "title": "--REMOVE--If using AGIC, do not share an AppGW across clusters",
     "priority": "Medium",
     "description": "The App Gateway Ingress Controller (AGIC) is a pod within your Kubernetes cluster. AGIC monitors the Kubernetes Ingress resources, and creates and applies App Gateway config based on these.",
      "documentation": [
@@ -289,7 +289,7 @@
     ]
   },
   {
-    "title": "Use Private Endpoints (preferred) or Virtual Network Service Endpoints to access PaaS services from the cluster",
+    "title": "--REMOVE--Use Private Endpoints (preferred) or Virtual Network Service Endpoints to access PaaS services from the cluster",
     "priority": "Medium",
     "description": "This will help keep your cluster secure by limiting access from outside the virtual network to Azure PaaS services",
      "documentation": [
@@ -353,7 +353,7 @@
     ]
   },
   {
-    "title": "If required add your own CNI plugin",
+    "title": "--REMOVE--If required add your own CNI plugin",
     "priority": "Low",
     "description": "A service mesh provides capabilities like traffic management, resiliency, policy, security, strong identity, and observability to your workloads.",
      "documentation": [
@@ -369,7 +369,7 @@
     ]
   },
   {
-    "title": "If using Azure CNI, consider using different Subnets for NodePools",
+    "title": "--REMOVE--If using Azure CNI, consider using different Subnets for NodePools",
     "priority": "Medium",
     "description": "This can address requirements such as having non-contiguous virtual network address space to split across node pools and other security reasons.",
      "documentation": [

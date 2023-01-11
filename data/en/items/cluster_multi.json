@@ -15,7 +15,7 @@
         ]
     },
     {
-        "title": "Use different VNETs in AKS Hybrid Env.",
+        "title": "--REMOVE--Use different VNETs in AKS Hybrid Env.",
         "priority": "High",
         "description": "Create AKS hybrid networks for Azure",
         "documentation": [
