@@ -46,7 +46,7 @@
         "url": "https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook"
       },
       {
-        "title": "Using egress lockdown and authorizing only the URL of your registry",
+        "title": "--REMOVE--Using egress lockdown and authorizing only the URL of your registry",
         "url": "https://docs.microsoft.com/azure/aks/limit-egress-traffic"
       }
     ],

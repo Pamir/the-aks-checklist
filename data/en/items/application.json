@@ -121,7 +121,7 @@
     "documentation": [
       {
         "title": "Azure Key Vault Provider for Secret Store CSI Driver",
-        "url": "https://github.com/Azure/secrets-store-csi-driver-provider-azure"
+        "url": "https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/tutorial-akv-secrets-provider"
       },
       {
         "title": "AKV2K8S",
@@ -134,25 +134,21 @@
     ]
   },
   {
-    "title": "Implement Azure Workload Identity",
+    "title": "Implement Group Managed Service Accounts (GMSA) for Windows Containers",
     "priority": "Medium",
     "description": "Don't use fixed credentials within pods or container images, as they are at risk of exposure or abuse. Instead, use workload identity federation to access Azure Active Directory (Azure AD) protected resources without needing to manage secrets ",
     "detail": "When pods need access to other Azure services, such as Cosmos DB, Key Vault, or Blob Storage, the pod needs access credentials. These access credentials could be defined with the container image or injected as a Kubernetes secret, but need to be manually created and assigned. Often, the credentials are reused across pods, and aren't regularly rotated. Managed identities for Azure resources (currently implemented as an associated AKS open source project) let you automatically request access to services through Azure AD. You don't manually define credentials for pods, instead they request an access token in real time, and can use it to access only their assigned services.",
     "documentation": [
       {
-        "title": "Use Azure Workload Identity",
-        "url": "https://learn.microsoft.com/azure/aks/workload-identity-overview"
-      },
-      {
-        "title": "Azure Active Directory Pod Identity (deprecated)",
-        "url": "https://docs.microsoft.com/azure/aks/use-azure-ad-pod-identity"
+        "title": "Use gMSA for Windows Containers",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/prepare-windows-nodes-gmsa"
       }
     ],
     "tags": [
       "all",
       "security",
       "application",
-      "identity"
+      "security"
     ]
   },
   {
@@ -323,7 +319,7 @@
     "documentation": [
       {
         "title": "Azure Built-In Policy",
-        "url": "https://docs.microsoft.com/azure/aks/policy-samples"
+        "url": "https://learn.microsoft.com/en-us/azure/azure-arc/kubernetes/policy-reference"
       },
       {
         "title": "Prisma Managing Compliance",
@@ -336,7 +332,7 @@
     ]
   },
   {
-    "title": "Use Azure Migrate to quick containerize your applications",
+    "title": "--CHECK--Use Azure Migrate to quick containerize your applications",
     "priority": "Low",
     "description": "The App Containerization tool offers a point-and-containerize approach to repackage applications as containers with minimal to no code changes by using the running state of the application. The tool currently supports containerizing ASP.NET applications and Java web applications running on Apache Tomcat.",
     "documentation": [

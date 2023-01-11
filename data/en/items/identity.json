@@ -2,15 +2,28 @@
     {
         "title": "Integrate authentication with AAD (using the managed integration)",
         "priority": "High",
-        "description": "Azure Kubernetes Service (AKS) can be configured to use Azure Active Directory (Azure AD) for user authentication. In this configuration, you can sign in to an AKS cluster by using your Azure AD authentication token.",
+        "description": "Azure Kubernetes Service (AKS) Hybrid can be configured to use Azure Active Directory (Azure AD) for user authentication. In this configuration, you can sign in to an AKS cluster by using your Azure AD authentication token.",
         "documentation": [
             {
-                "title": "AKS-managed Azure Active Directory integration",
-                "url": "https://docs.microsoft.com/azure/aks/managed-aad"
-            },
+                "title": "Control access using Azure AD and Kubernetes RBAC in AKS hybrid",
+                "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/kubernetes-rbac-azure-ad"
+            }
+        ],
+        "tags": [
+            "all",
+            "security",
+            "identity"
+        ]
+    },
+    
+    {
+        "title": "Integrate authentication with AD ",
+        "priority": "High",
+        "description": "Azure Kubernetes Service (AKS) Hybrid can be configured to use  Active Directory (AD) for user authentication. In this configuration, you can sign in to an AKS cluster by using your LDAP authentication .",
+        "documentation": [
             {
-                "title": "Disable local accounts",
-                "url": "https://docs.microsoft.com/azure/aks/managed-aad#disable-local-accounts"
+                "title": "Use Active Directory single sign-on for secure connection to Kubernetes API server in AKS hybrid",
+                "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/ad-sso"
             }
         ],
         "tags": [
@@ -26,7 +39,7 @@
         "documentation": [
             {
                 "title": "Limit cluster access via K8S RBAC for users & workloads",
-                "url": "https://docs.microsoft.com/azure/aks/azure-ad-rbac"
+                "url": "hhttps://learn.microsoft.com/en-us/azure/aks/hybrid/kubernetes-rbac-azure-ad"
             }
         ],
         "tags": [
@@ -36,7 +49,7 @@
         ]
     },
     {
-        "title": "Use AKS and ACR integration without password",
+        "title": "--REMOVE--Use AKS and ACR integration without password",
         "priority": "Medium",
         "description": "AKS can authenticate to ACR without using any password, but by using either Service Principal or Managed Identity.",
         "detail": "For AKS to download/pull images from Azure Container Registry (ACR), it needs the ACR credentials including the password. To avoid saving the password in the cluster, you can simply activate the ACR integration on new or existing AKS cluster using SPN or Managed Identity",
@@ -53,7 +66,7 @@
         ]
     },
     {
-        "title": "Use managed identities instead of Service Principals",
+        "title": "--REMOVE--Use managed identities instead of Service Principals",
         "priority": "High",
         "description": "Each AKS cluster needs either a Managed Identity or Service Principal.  We recommend using Managed Identity in AKS",
         "documentation": [
@@ -69,7 +82,7 @@
         ]
     },
     {
-        "title": "Limit access to admin kubeconfig (get-credentials --admin)",
+        "title": "--REMOVE--Limit access to admin kubeconfig (get-credentials --admin)",
         "priority": "Medium",
         "description": "To limit who can get that Kubernetes configuration (kubeconfig) information and to limit the permissions they then have, you can use Azure role-based access control (Azure RBAC).",
         "documentation": [
@@ -85,7 +98,7 @@
         ]
     },
     {
-        "title": "For AKS non-interactive logins use kubelogin",
+        "title": "--REMOVE--For AKS non-interactive logins use kubelogin",
         "priority": "Medium",
         "description": " You can use kubelogin to access the cluster with non-interactive service principal sign-in.",
         "documentation": [
@@ -101,7 +114,7 @@
         ]
     },
     {
-        "title": "Disable AKS local accounts",
+        "title": "--REMOVE--Disable AKS local accounts",
         "priority": "Medium",
         "description": "AKS offers users the ability to disable local accounts via a flag, disable-local-accounts",
         "documentation": [
@@ -117,7 +130,7 @@
         ]
     },
     {
-        "title": "Configure if required Just-in-time cluster access",
+        "title": "--REMOVE-Configure if required Just-in-time cluster access",
         "priority": "Low",
         "description": "AKS offers users the ability to enable access for a limited time",
         "documentation": [
@@ -133,7 +146,7 @@
         ]
     },
     {
-        "title": "For finer control consider using a managed Kubelet Identity",
+        "title": "--REMOVE--For finer control consider using a managed Kubelet Identity",
         "priority": "Low",
         "description": "A Kubelet identity enables access granted to the existing identity prior to cluster creation.",
         "documentation": [
@@ -148,4 +161,4 @@
             "identity"
         ]
     }
-]
+  ]

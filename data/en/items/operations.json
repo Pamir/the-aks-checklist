@@ -1,6 +1,27 @@
 [
   {
-    "title": "Have a regular process to upgrade the cluster node images periodically (weekly, for example), or use the AKS autoupgrade feature",
+
+    "title": "Maintain kubernetes version up to date",
+    "priority": "Medium",
+    "description": "To stay current on new features and bug fixes, regularly upgrade to the Kubernetes version in your AKS cluster. Support for kubernetes is current and N-2 versions only",
+    "documentation": [
+      {
+        "title": "Regularly update to the latest version of Kubernetes",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/supported-kubernetes-versions"
+      },
+      {
+        "title": "Use the upgrade feature",
+        "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/update-akshci-host-powershell"
+      }
+    ],
+    "tags": [
+      "all",
+      "operation",
+      "security"
+    ]
+  },
+  {
+    "title": "Keep nodes up to date and patched",
     "priority": "High",
     "description": "AKS supports upgrading the images on a node so you're up to date with the newest OS and runtime updates. AKS provides one new image per week with the latest updates, so it's beneficial to upgrade your node's images regularly for the latest features, including Linux or Windows patches",
     "detail": "Using automation and this method will ensure that all your nodes are consistently up to date with last features/fixes/patchs, without having to upgrade the kubernetes version. An alternative could be to use Kured to reboot nodes with pending reboots but it will only patch the Operating System, not the AKS layer",
@@ -343,7 +364,7 @@
     ]
   },
   {
-    "title": "Consider using AKS command invoke on private clusters",
+    "title": "--REMOVE--Consider using AKS command invoke on private clusters",
     "priority": "Low",
     "description": "You can use command invoke to access private clusters without having to configure a VPN or Express Route",
     "detail": "Using command invoke allows you to remotely invoke commands like kubectl and helm on your private cluster through the Azure API without directly connecting to the cluster.",
@@ -409,7 +430,7 @@
     ]
   },
   {
-    "title": "Regularly check Azure Advisor for recommendations on your cluster",
+    "title": "--REMOVE--Regularly check Azure Advisor for recommendations on your cluster",
     "priority": "Medium",
     "description": "Azure advisor can enhance environment monitoring and can help improve the operations of your cluster by reducing costs, etc",
     "documentation": [
@@ -443,7 +464,7 @@
     ]
   },
   {
-    "title": "Enable AKS auto-certificate rotation",
+    "title": "--REMOVE--Enable AKS auto-certificate rotation",
     "priority": "Low",
     "description": "Periodically, you may need to rotate those certificates for security or policy reasons. For example, you may have a policy to rotate all your certificates every 90 days.",
     "documentation": [
@@ -474,7 +495,7 @@
     ]
   },
   {
-    "title": "Consider AKS virtual node for quick bursting",
+    "title": "--REMOVE--Consider AKS virtual node for quick bursting",
     "priority": "Low",
     "description": "Virtual nodes with ACI can help speed up scaling",
     "documentation": [
@@ -489,7 +510,7 @@
     ]
   },
   {
-    "title": "Consider spot node pools for non time-sensitive workloads",
+    "title": "--REMOVE--Consider spot node pools for non time-sensitive workloads",
     "priority": "Low",
     "description": "Spot nodepools can help with cost management",
     "documentation": [
@@ -520,7 +541,7 @@
     ]
   },
   {
-    "title": "If not using egress filtering with AzFW/NVA, monitor standard ALB allocated SNAT ports",
+    "title": "--REMOVE--If not using egress filtering with AzFW/NVA, monitor standard ALB allocated SNAT ports",
     "priority": "Medium",
     "description": "Monitoring these ports are important for security reasons",
     "documentation": [
@@ -536,7 +557,7 @@
     ]
   },
   {
-    "title": "Subscribe to resource health notifications for your AKS cluster",
+    "title": "--REMOVE--Subscribe to resource health notifications for your AKS cluster",
     "priority": "High",
     "description": "Learn how to troubleshoot resource health issues",
     "documentation": [
@@ -552,7 +573,7 @@
     ]
   },
   {
-    "title": "Consider subscribing to EventGrid Events for AKS automation",
+    "title": "--REMOVE--Consider subscribing to EventGrid Events for AKS automation",
     "priority": "Low",
     "description": "AKS emits certain events that enable it to subscribe to EventGrid which can be used for automation",
     "documentation": [

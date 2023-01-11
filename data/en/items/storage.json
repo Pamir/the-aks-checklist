@@ -2,15 +2,15 @@
   {
     "title": "Choose the right storage type",
     "priority": "High",
-    "description": "Understand the needs of your application to pick the right storage. Use high performance, SSD-backed storage for production workloads. Plan for network-based storage when there is a need for multiple concurrent connections.",
+    "description": "Understand the needs of your application to pick the right storage. Use high performance, disks in Windows/ Azure Stack HCI for production workloads.",
     "documentation": [
       {
-        "title": "Storage considerations for Azure Kubernetes Service",
-        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/app-platform/aks/storage"
+        "title": "Storage considerations for Azure Stack HCI",
+        "url": "https://learn.microsoft.com/en-us/azure-stack/hci/concepts/storage-spaces-direct-overview"
       },
       {
         "title": "Choose the right storage type",
-        "url": "https://docs.microsoft.com/azure/aks/operator-best-practices-storage#choose-the-appropriate-storage-type"
+        "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/persistent-volume"
       }
     ],
     "tags": [
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "title": "Size the nodes for storage needs",
+    "title": "--REMOVE--Size the nodes for storage needs",
     "priority": "Medium",
     "description": "Each node size supports a maximum number of disks. Different node sizes also provide different amounts of local storage and network bandwidth. Plan for your application demands to deploy the appropriate size of nodes.",
     "detail": "Different types and sizes of nodes are available. Each node (underlying VM) size provides a different amount of core resources such as CPU and memory. These VM sizes have a maximum number of disks that can be attached. Storage performance also varies between VM sizes for the maximum local and attached disk IOPS (input/output operations per second). If your applications require Azure Disks as their storage solution, plan for and choose an appropriate node VM size. The amount of CPU and memory isn't the only factor when you choose a VM size. The storage capabilities are also important.",
@@ -52,12 +52,12 @@
   {
     "title": "Secure and back up your data",
     "priority": "Medium",
-    "description": "Back up your data using an appropriate tool for your storage type, such as Velero or Azure Site Recovery",
+    "description": "Back up your data using an appropriate tool for your storage type, such as Velero",
     "detail": "Understand the limitations of the different approaches to data backups and if you need to quiesce your data prior to snapshot. Data backups don't necessarily let you restore your application environment of cluster deployment.",
     "documentation": [
       {
         "title": "Secure and back up your data",
-        "url": "https://docs.microsoft.com/azure/aks/operator-best-practices-storage#secure-and-back-up-your-data"
+        "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/backup-workload-cluster"
       }
     ],
     "tags": [
@@ -67,7 +67,7 @@
     ]
   },
   {
-    "title": "Make your storage resilient",
+    "title": "--REMOVE--Make your storage resilient",
     "priority": "High",
     "description": "Where possible, don't store service state inside the container. Instead, use an Azure platform as a service (PaaS) that supports multiregion replication.",
     "detail": "Service state refers to the in-memory or on-disk data that a service requires to function. State includes the data structures and member variables that the service reads and writes. Depending on how the service is architected, the state might also include files or other resources that are stored on the disk. For example, the state might include the files a database uses to store data and transaction logs.",
@@ -84,7 +84,7 @@
     ]
   },
   {
-    "title": "Use ephemeral OS disks",
+    "title": "--REMOVE--Use ephemeral OS disks",
     "priority": "High",
     "description": " With ephemeral OS disks, you see lower read/write latency on the OS disk of AKS agent nodes since the disk is locally attached.",
     "detail": "You will also get faster cluster operations like scale or upgrade thanks to faster re-imaging and boot times",
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "title": "For hyper performance storage option use Ultra Disks on AKS",
+    "title": "--REMOVE--For hyper performance storage option use Ultra Disks on AKS",
     "priority": "Low",
     "description": "Azure ultra disks offer high throughput, high IOPS, and consistent low latency disk storage for your stateful applications.",
     "detail": "One major benefit of ultra disks is the ability to dynamically change the performance of the SSD along with your workloads without the need to restart your agent nodes. Ultra disks are suited for data-intensive workloads.",
@@ -118,7 +118,7 @@
     ]
   },
   {
-    "title": "Avoid keeping state in the cluster, and store data outside (AzStorage, AzSQL, Cosmos, etc)",
+    "title": "--REMOVE--Avoid keeping state in the cluster, and store data outside (AzStorage, AzSQL, Cosmos, etc)",
     "priority": "Medium",
     "description": "Where possible, don't store service state inside the container. Instead, use an Azure platform as a service (PaaS) that supports multiregion replication.",
     "detail": "Service state refers to the in-memory or on-disk data that a service requires to function. State includes the data structures and member variables that the service reads and writes. Depending on how the service is architected, the state might also include files or other resources that are stored on the disk. For example, the state might include the files a database uses to store data and transaction logs.",
@@ -135,7 +135,7 @@
     ]
   },
   {
-    "title": "If using Azure Disks and AZs, consider having nodepools within a zone for LRS disk",
+    "title": "--REMOVE--If using Azure Disks and AZs, consider having nodepools within a zone for LRS disk",
     "priority": "Medium",
     "description": "If using Azure Disks and AZs, consider having nodepools within a zone for LRS disk with VolumeBindingMode:WaitForFirstConsumer for provisioning storage in right zone or use ZRS disk for nodepools spanning multiple zones",
     "documentation": [

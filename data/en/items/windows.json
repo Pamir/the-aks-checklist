@@ -38,13 +38,13 @@
     ]
   },
   {
-    "title": "Don't use privileged containers",
+    "title": "Don't use Host Process containers",
     "priority": "Medium",
-    "description": "Windows containers do not support elevation of privilege",
+    "description": "Windows HostProcess containers enable you to run containerized workloads on a Windows host",
     "documentation": [
       {
         "title": "Limitations of Windows containers",
-        "url": "https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/#supported-functionality-and-limitations"
+        "url": "https://kubernetes.io/docs/tasks/configure-pod-container/create-hostprocess-pod/"
       }
     ],
     "tags": [
@@ -68,7 +68,7 @@
     ]
   },
   {
-    "title": "Implement CNI network mode",
+    "title": "--REMOVE--Implement CNI network mode",
     "priority": "High",
     "description": "AKS clusters with Windows node pools must use the Azure CNI (advanced) networking model. Kubenet (basic) networking is not supported. ",
     "documentation": [
@@ -83,7 +83,7 @@
     ]
   },
   {
-    "title": "Patch your nodes yourself",
+    "title": "--REMOVE--Patch your nodes yourself",
     "priority": "High",
     "description": "Windows Server nodes in AKS must be upgraded to get the latest patch fixes and updates. Windows Updates are not enabled on nodes in AKS. AKS releases new node pool images as soon as patches are available, it is the customers responsibility to upgrade node pools to stay current on patches and hotfix. ",
     "documentation": [
@@ -100,11 +100,11 @@
   {
     "title": "Secure the traffic of your containers",
     "priority": "High",
-    "description": "Network policies are currently not supported, ensure that the containerized applications have a layer of protection like authentication ",
+    "description": "Create client and server pods on Linux and Windows nodes, verify connectivity between the pods, and then apply a basic network policy to isolate pod traffic in AKS hybrid.",
     "documentation": [
       {
         "title": "Limitations of Windows containers",
-        "url": "https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/#supported-functionality-and-limitations"
+        "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/calico-networking-policy"
       }
     ],
     "tags": [
@@ -119,7 +119,7 @@
     "documentation": [
       {
         "title": "Enable Group Managed Service Accounts (GMSA) for your Windows Server nodes",
-        "url": "https://docs.microsoft.com/en-gb/azure/aks/use-group-managed-service-accounts"
+        "url": "https://learn.microsoft.com/en-us/azure/aks/hybrid/prepare-windows-nodes-gmsa"
       }
     ],
     "tags": [
